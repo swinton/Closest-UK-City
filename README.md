@@ -26,7 +26,7 @@ $ pip install requirements.txt
 
 <pre>
 $ python webapp.py
-$ curl http://127.0.0.1:5000/get_closest_city/<lat>/<lng>
+$ curl http://127.0.0.1:5000/get_closest_city/&lt;lat&gt;/&lt;lng&gt;
 </pre>
 
 Command line usage is also possible - but you can work that out for yourself ;)
