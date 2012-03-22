@@ -10,7 +10,6 @@ def hello_world():
 @app.route('/get_closest_city/<lat>/<lng>')
 def get_closest_city(lat, lng):
     city, city_lat, city_lng, dist = closest_city(float(lat), float(lng))
-    # return jsonify(foo="bar")
     return jsonify(city=city, city_lat=city_lat, city_lng=city_lng, dist=dist)
 
 if __name__ == '__main__':
