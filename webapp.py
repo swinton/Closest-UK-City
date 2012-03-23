@@ -1,7 +1,14 @@
+#!/usr/bin/env python
+
+"""
+Simple web app to return the closest UK city to a set of co-ordinates.
+"""
+
 from flask import Flask, jsonify
-app = Flask(__name__)
 
 from closest_city import closest_city
+
+app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
